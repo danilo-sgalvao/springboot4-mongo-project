@@ -5,7 +5,7 @@ import com.danilogalvao.workshopmongo.dto.CommentDTO;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -14,7 +14,7 @@ import java.util.Objects;
 public class Post implements Serializable {
 
     private String id;
-    private LocalDate date;
+    private LocalDateTime date;
     private String title;
     private String body;
     private AuthorDTO author;
@@ -24,7 +24,7 @@ public class Post implements Serializable {
     public Post() {
     }
 
-    public Post(String id, LocalDate date, String title, String body, AuthorDTO author) {
+    public Post(String id, LocalDateTime date, String title, String body, AuthorDTO author) {
         this.id = id;
         this.date = date;
         this.title = title;
@@ -40,11 +40,11 @@ public class Post implements Serializable {
         this.id = id;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

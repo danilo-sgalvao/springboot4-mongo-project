@@ -5,6 +5,7 @@ import com.danilogalvao.workshopmongo.repository.PostRepository;
 import com.danilogalvao.workshopmongo.services.exception.ObjectNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,5 +25,10 @@ public class PostService {
 
     public List<Post> findByTitle(String title){
         return postRepo.searchTitle(title);
+    }
+
+    public List<Post> fullSearch(String text, LocalDateTime minDate, LocalDateTime maxDate){
+        maxDate = maxDate.plusDays(1);
+        return postRepo.fullSearch(text, minDate, maxDate);
     }
 }
