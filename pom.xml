@@ -11,20 +11,26 @@
 	<groupId>com.danilogalvao</groupId>
 	<artifactId>workshopmongo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
-	<url/>
+	<name>workshopmongo</name>
+	<description>API REST de blog (usuarios, posts e comentarios) com Spring Boot 4 e MongoDB</description>
+	<url>https://github.com/danilo-sgalvao/springboot4-mongo-project</url>
 	<licenses>
-		<license/>
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+		</license>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<id>danilo-sgalvao</id>
+			<name>Danilo Galvao</name>
+			<url>https://github.com/danilo-sgalvao</url>
+		</developer>
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<connection>scm:git:https://github.com/danilo-sgalvao/springboot4-mongo-project.git</connection>
+		<developerConnection>scm:git:git@github.com:danilo-sgalvao/springboot4-mongo-project.git</developerConnection>
+		<url>https://github.com/danilo-sgalvao/springboot4-mongo-project</url>
 	</scm>
 	<properties>
 		<java.version>25</java.version>
